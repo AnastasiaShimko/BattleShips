@@ -1,6 +1,6 @@
 namespace BattleShips;
 
-class Destroyer : Ship
+internal class Destroyer : Ship
 {
     public Destroyer() : base("Destroyer", 4)
     {

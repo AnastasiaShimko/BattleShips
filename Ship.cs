@@ -1,6 +1,6 @@
 namespace BattleShips;
 
-public class Ship
+public abstract class Ship
 {
     public string Name { get; }
     public int Size { get; }
@@ -9,7 +9,7 @@ public class Ship
     public bool IsSunk => Hits >= Size;
     public char ShipSymbol { get; set; }
 
-    public Ship(string name, int size)
+    protected Ship(string name, int size)
     {
         Name = name;
         Size = size;
